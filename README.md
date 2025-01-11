@@ -24,8 +24,4 @@ The repository is organized into folders based on the topics covered:
 - **GitHub Codespaces**: For coding and testing JavaScript.
 - **Browser Developer Tools**: For debugging and experimentation.
 
-## 🚀 How to Use
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/<your-username>/javascript-basics.git
