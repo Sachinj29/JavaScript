@@ -35,3 +35,29 @@ function UserLogin(username){
 }
 
 console.log(UserLogin("Sachin"));
+
+//--------> CHECK <------------
+
+function UserLogin(username){
+    if(!username){
+        console.log("Please Enter the Username");
+        return
+    }
+    return `${username} just logged in.`
+}
+
+console.log(UserLogin());
+
+
+//-----------> By Default Override 
+
+// function UserLogin(username = "Samrat"){
+//     if(!username){
+//         console.log("Please Enter the Username");
+//         return
+//     }
+//     return `${username} just logged in.`
+// }
+
+// console.log(UserLogin("Sachin"));
+
