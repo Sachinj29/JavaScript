@@ -36,4 +36,24 @@ if(true){
 
 console.log(a);
 
+//Define a two function :
+
+function one(){
+    const name = "Sachin";
+
+    function two(){
+        const surname = "Jadhav";    //surname doesnt access out of the Scope 
+        console.log(name);
+    }
+
+    //console.log(surname);
+
+    two();
+}
+
+one();
+
+// -----------> Child Function access variable of Parent Functions. <----------------------
+
+
 
