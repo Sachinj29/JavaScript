@@ -67,7 +67,7 @@ for(let i=1;i<=5;i++){
   }
 }
 
-//==========> Array  <===============
+//==========> Array For Loop :  <===============
 
 let MyArray = ["Sachin", "Samrat", "Prathamesh", "Yash"];
 
@@ -75,3 +75,6 @@ for(let i=0; i<MyArray.length; i++){
   const name = MyArray[i];
   console.log(name);
 }
+
+
+
