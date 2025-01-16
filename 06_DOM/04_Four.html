@@ -10,4 +10,15 @@
     <li>JavaScript</li>
   </ul>
 </body>
+<script>
+  function addLanguage(langName){
+    const li = document.createElement('li');
+    li.innerHTML = `${langName}`
+    document.querySelector('.Language').appendChild(li)
+  }
+
+  addLanguage("Python")
+  addLanguage("Java")
+
+</script>
 </html>
