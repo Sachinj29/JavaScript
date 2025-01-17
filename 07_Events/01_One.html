@@ -19,6 +19,8 @@
 
       <li> <img width="100px" id="Chameli" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQxueh32GUDf2nLxFHiNsWTvMBKuMW6GLe1A&s" alt="Chameli"> </li>
 
+      <li> <a style="color:blue;" href="https://google.com" id="google" > Google </a></li>
+
     </ul>
 
   </div>
@@ -34,7 +36,11 @@
       alert("Lotus clicked Agains");
     })
   
-    
+    document.getElementById('google').addEventListener('click', function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      console.log("Google licked");
+    }, false)
 
 
 </script>
