@@ -5,7 +5,30 @@
   
   <title>Document</title>
 </head>
-<body>
+<body style="background-color: black;">
   
+
+0	UNSENT	Client has been created. open() not called yet.
+1	OPENED	open() has been called.
+2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+3	LOADING	Downloading; responseText holds partial data.
+4	DONE	The operation is complete.
 </body>
+
+<script>
+  const RequestURL = 'https://api.github.com/'
+   const xhr = new XMLHttpRequest();
+   xhr.open('GET', 'RequestURL')
+
+   xhr.onreadystatechange = function(){
+    console.log(xhr.readyState);
+
+    if(xhr.readyState === 4){
+      console.log(this.responseText);
+    }
+   }
+  // console.log(xhr.readyState);
+   xhr.send()
+
+</script>
 </html>
